@@ -39,14 +39,14 @@ defmodule Mixpanel.Mixfile do
   end
 
   defp deps do
-    [{:httpoison, "~> 0.9.0", optional: true},
-     {:poison, "~> 1.5.2", optional: true},
-     {:credo, "~> 0.2", only: :dev},
-     {:dogma, "~> 0.0", only: :dev},
+    [{:httpoison, "~> 0.9"},
+     {:poison, "~> 2.0"},
+     {:credo, "~> 0.4", only: :dev},
+     {:dogma, "~> 0.1", only: :dev},
      {:dialyxir, "~> 0.3", only: :dev},
      {:mock, "~> 0.1.1", only: :test},
      {:ex_doc, "~> 0.10", only: :docs},
      {:earmark, "~> 0.1", only: :docs},
-     {:inch_ex, ">= 0.0.0", only: :docs}]
+     {:inch_ex, "~> 0.5", only: :docs}]
   end
 end
